@@ -3,7 +3,22 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
-  <persistence-unit name="default">
+    <persistence-unit name="myPU">
+        <!--AJOUT DES INFOS DE CONNEXION : -->
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa_jee.games?serverTimezone=UTC"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value=""/>
+            <!-- Affiche les requêtes SQL dans la console         -->
+            <property name="hibernate.show_sql" value="true"/>
+            <!-- Stratégie pour la génération du schéma de la base données     -->
+            <!-- validate : valide le schéma de la base de données en correspondance avec les entités  -->
+            <!-- update : met à jour le schéma en comparant les entités et le schéma actuel de la base de données  -->
+            <!-- create : supprime le schéma de la base de données puis utilise les entités pour le recréer  -->
+            <!-- create-drop : effectue l'option create à la fermeture de l'EntityManagerFactory  -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>  <!--si c'est CREATE: base de données en phase de création, si "Validate" la BDD est validée -->
 
-  </persistence-unit>
+        </properties>
+    </persistence-unit>
 </persistence>
