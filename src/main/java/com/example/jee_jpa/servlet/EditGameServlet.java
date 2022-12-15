@@ -21,7 +21,7 @@ public class EditGameServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GameDao gameDao = new GameDao();
         //On récupère l'id mis en paramètre dans la jsp "list-game"
-        Long id = Long.valueOf(req.getParameter("id"));
+        Long id = Long.parseLong(req.getParameter("id"));
         Optional<Game> game = gameDao.findById(id);
         //On récupère les infos de notre entité game :
         String name = game.get().getName();
@@ -37,7 +37,7 @@ public class EditGameServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //Modification du formulaire
         //Attention à prendre le name dans le JSP et non l'ID
-        Long id = Long.valueOf(req.getParameter("gameId"));
+        Long id = Long.parseLong(req.getParameter("gameId"));
         String name =  req.getParameter("gameName");
         String description= req.getParameter("gameDescription");
 

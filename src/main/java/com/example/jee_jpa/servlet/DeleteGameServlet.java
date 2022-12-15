@@ -21,7 +21,7 @@ public class DeleteGameServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //On récupère l'id mis en paramètre dans la jsp "list-game"
             String idStr = req.getParameter("IdGame");
-         System.out.println(idStr);
+            System.out.println(idStr);
             Long id = Long.parseLong(idStr);
             Dao<Game> dao = DaoFactory.getGameDao();
             //GameDao dao = new GameDao();

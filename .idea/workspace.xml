@@ -9,13 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27215e2f-423b-4f27-8597-429a17285301" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TP_JEE_JPA_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/TP_JEE_JPA_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="27215e2f-423b-4f27-8597-429a17285301" name="Changes" comment="Projet JPA / JEE">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jee_jpa/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jee_jpa/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jee_jpa/model/Auteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jee_jpa/servlet/DeleteGameServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jee_jpa/servlet/DeleteGameServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jee_jpa/servlet/EditGameServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jee_jpa/servlet/EditGameServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jee_jpa/servlet/GameListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jee_jpa/servlet/GameListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,6 +37,9 @@
   <component name="GitLabServerManager">
     <selected>-1</selected>
     <servers />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/detail-game.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -56,23 +60,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JPA.DatabaseSchemaImportDialog": "579b91be-3430-46ad-951c-ac60aebc33b8",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/zoran/IdeaProjects/TP_JEE_JPA",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;579b91be-3430-46ad-951c-ac60aebc33b8&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/zoran/IdeaProjects/TP_JEE_JPA&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\zoran\IdeaProjects\TP_JEE_JPA\src\main\resources\META-INF" />
@@ -86,6 +90,7 @@
       <recent name="C:\Users\zoran\IdeaProjects\TP_JEE_JPA\src\main\resources\META-INF\assets" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.jee_jpa.filter" />
       <recent name="com.example.jee_jpa.servlet" />
       <recent name="com.example.jee_jpa.model" />
     </key>
@@ -192,8 +197,19 @@
       <updated>1669906603376</updated>
       <workItem from="1669906604994" duration="2208000" />
       <workItem from="1670231855508" duration="22594000" />
-      <workItem from="1670272875113" duration="4135000" />
+      <workItem from="1670272875113" duration="4655000" />
+      <workItem from="1670315291689" duration="9363000" />
+      <workItem from="1670425211919" duration="5316000" />
+      <workItem from="1671092629277" duration="692000" />
     </task>
+    <task id="LOCAL-00001" summary="Projet JPA / JEE">
+      <created>1670277261877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670277261877</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +225,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Projet JPA / JEE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Projet JPA / JEE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

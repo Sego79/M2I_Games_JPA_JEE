@@ -14,10 +14,10 @@ import java.io.IOException;
 import java.util.List;
 
 
-@WebServlet(urlPatterns = "/games")
+@WebServlet(urlPatterns = GameListServlet.URL)
 public class GameListServlet extends HttpServlet {
 
-
+        public static final String URL = "/games";
         @Override
         protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
                 Dao<Game> GameDao = DaoFactory.getGameDao();
